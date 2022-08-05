@@ -1,0 +1,75 @@
+import turtle
+
+screen = turtle.getscreen()
+screen.bgcolor('#FFF9CA')
+
+tao = turtle.Pen()
+tao.width(5)
+tao.color('#FFB4B4')
+tao.speed(1)
+
+def go(x,y):
+    tao.penup()
+    tao.goto(x,y)
+    tao.pendown()
+    
+go(-200,200)
+tao.right(90)
+tao.forward(100)
+go(-200,150)
+tao.left(90)
+tao.forward(100)
+go(-100,200)
+tao.right(90)
+tao.forward(100)
+
+go(-50,100)
+tao.backward(100)
+tao.left(90)
+tao.forward(100)
+tao.right(90)
+tao.forward(50)
+tao.right(90)
+tao.forward(100)
+tao.backward(100)
+tao.left(90)
+tao.forward(50)
+tao.right(90)
+tao.forward(100)
+
+go(100,200)
+tao.right(90)
+tao.backward(100)
+tao.right(90)
+tao.forward(50)
+tao.circle(50,180)
+tao.forward(50)
+
+tao.color('#B2A4FF')
+
+go(-200,-100)
+tao.right(90)
+tao.forward(100)
+tao.right(135)
+tao.forward(80)
+tao.left(90)
+tao.forward(80)
+tao.right(135)
+tao.forward(100)
+
+go(-50,-100)
+tao.backward(100)
+
+go(0,-100)
+tao.backward(100)
+tao.left(45)
+tao.forward(122)
+tao.left(135)
+tao.forward(100)
+
+go(225,-50)
+tao.circle(50)
+tao.left(90)
+tao.forward(50)
+
+turtle.mainloop()
